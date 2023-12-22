@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havard Medical Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+    <header class="header" id="header">
+		<a class='logo' href='#'><i class='bx bx-plus-medical'></i>Havard Medical Center</a>
+
+		<nav class="navbar">
+			<a href="#home">Home</a>
+			<a href="#ledger">General Ledger</a>
+			<a href="#tAccounts">T Accounts</a>
+            <a href="#TBalance">Trial Balance</a>
+            <a href="#adjustingEntries">Adjusting Entries</a>
+		</nav>
+
+		<i class='bx bx-menu' id="menu-icon"></i>
+	</header>
+
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Dr. Nick Marasagani</h1>
+            <p> Dr. Nick Marasigan, a Harvard Medical Center graduate, recently established a cutting-edge medical practice in San Pablo, Laguna. In October 2022, the practice initiated operations with notable transactions:
+                
+                - Dr. Marasigan transferred P250,000 to the clinic's account.
+                - Acquired a medical clinic and land, financed with P50,000 cash and a 5-year, 20% note payable.
+                - Purchased medical equipment and supplies using a 24% note payable and cash.
+                - Obtained a year-long "all-in-one" insurance plan for P20,000.</p>
+            <div id="details" class="hidden">
+                <p>
+                    Bought P17,000 worth of medical supplies from San Pablo Supply.
+                    - Paid P73,000 in staff salaries.
+                    - Received P90,000 for research from the Laguna Experimental Drug Center.
+                    - Billed patients P317,000 and paid P23,000 for equipment repairs.
+                    - Collected P117,000 in cash from patients.
+                    
+                    October also saw additional financial activities, including bill payments, account purchases, patient collections, and a P200,000 cash withdrawal.
+                </p>
+            </div>
+            
+            <a href="#" class="btn" onclick="toggleDetails()">Read More</a>
+        </div>
+        <div class="image">
+            <img src="images/img1.png" alt="">
+        </div>
+    </section>
+    
+
+    <!-- <section class="ledger" id="ledger">
+        <table>
+            <caption>
+                Dr. Nick Marasigan, M.D.
+                General Ledger 
+                For the month ended October 31, 2021
+            </caption>
+
+            <tr>
+                <th>Date</th>
+                <th>Particulars</th>
+                <th>Pr</th>
+                <th>Debit</th>
+                <th>Credit</th>
+            </tr>
+
+
+            <tr>
+                <td data-cell="date">1</td>
+                <td data-cell="debit">Cash
+                </td>
+                <td data-cell="PR">110</td>
+                <td data-cell="value-debit">250,000</td>
+                <td data-cell="value-credit"></td>
+            </tr>
+
+            <tr>
+                <td data-cell="date"></td>
+                <td data-cell="credit">Marasagani, Capital</td>
+                <td data-cell="PR">310</td>
+                <td data-cell="value-debit"></td>
+                <td data-cell="value-credit">250,000</td>
+            </tr>
+
+
+            <tr>
+                <td data-cell="date"></td>
+                <td data-cell="debit">Medical Building
+                </td>
+                <td data-cell="PR">110</td>
+                <td data-cell="value-debit">250,000</td>
+                <td data-cell="value-credit"></td>
+            </tr>
+
+            <tr>
+                <td data-cell="date"></td>
+                <td data-cell="credit">Marasagani, Capital</td>
+                <td data-cell="PR">310</td>
+                <td data-cell="value-debit"></td>
+                <td data-cell="value-credit">250,000</td>
+            </tr>
+
+
+        </table>
+    </section> -->
+
+
+    <div class="ledger" id="ledger">
+        <center><h3 class="heading"> <span>Dr. Nick Marasigan, M.D.
+            General Ledger 
+            For the month ended October 31, 2021</span></h3></center>
+    
+
+    <div class="Journal">
+        
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Debit: 250,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: Marasagani Capital</p>
+            <p>PR: 310</p>
+            <p>Credit: 250,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: Medical Building</p>
+            <p>PR: 160</p>
+            <p>Debit: 1,000,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: Land</p>
+            <p>PR: 150</p>
+            <p>Debit: 250,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: 20% Notes Payable</p>
+            <p>PR: 220</p>
+            <p>Credit: 1,200,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Credit: 50,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: Medical Equipment</p>
+            <p>PR: 170</p>
+            <p>Debit: 420,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: Medical Supplies</p>
+            <p>PR: 130</p>
+            <p>Debit: 39,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Credit: 59,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 1</h2></center>
+            <p>Particulars: 24% Notes Payable</p>
+            <p>PR: 210</p>
+            <p>Credit: 400,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 2</h2></center>
+            <p>Particulars: Insurance Expense</p>
+            <p>PR: 520</p>
+            <p>Debit: 20,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 2</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Credit: 20,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 4</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 520</p>
+            <p>Debit: 117,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 4</h2></center>
+            <p>Particulars: Medical Revenues</p>
+            <p>PR: 410</p>
+            <p>Credit: 117,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 7</h2></center>
+            <p>Particulars: Medical Supplies</p>
+            <p>PR: 130</p>
+            <p>Debit: 17,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 7</h2></center>
+            <p>Particulars: Accounts Payable</p>
+            <p>PR: 310</p>
+            <p>Credit: 17,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 10</h2></center>
+            <p>Particulars: Salaries Expense</p>
+            <p>PR: 510</p>
+            <p>Debit: 73,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 10</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Credit: 73,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 12</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Debit: 90,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 12</h2></center>
+            <p>Particulars: Unearned Research Revenue</p>
+            <p>PR: 260</p>
+            <p>Credit: 90,000</p>
+        </div>
+    </div>
+
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 18</h2></center>
+            <p>Particulars: Accounts Recievable</p>
+            <p>PR: 120</p>
+            <p>Debit: 317,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 18</h2></center>
+            <p>Particulars: Medical Revenues</p>
+            <p>PR: 410</p>
+            <p>Credit: 317,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 21</h2></center>
+            <p>Particulars: Repari Expense</p>
+            <p>PR: 530</p>
+            <p>Debit: 23,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 21</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Credit: 23,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 23</h2></center>
+            <p>Particulars: Telephone Expense</p>
+            <p>PR: 530</p>
+            <p>Debit: 3,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 23</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Credit: 3,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 24</h2></center>
+            <p>Particulars: Medical Equipment</p>
+            <p>PR: 170</p>
+            <p>Debit: 45,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 24</h2></center>
+            <p>Particulars: Accounts Payable</p>
+            <p>PR: 230</p>
+            <p>Credit: 45,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 25</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Debit: 113,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 25</h2></center>
+            <p>Particulars: Accounts Receivable</p>
+            <p>PR: 120</p>
+            <p>Credit: 113,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 27</h2></center>
+            <p>Particulars: Accounts Payable</p>
+            <p>PR: 230</p>
+            <p>Debit: 13,000</p>
+        </div>
+    </div>
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 27</h2></center>
+            <p>Particulars: Accounts Cash</p>
+            <p>PR: 110</p>
+            <p>Credit: 13,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 30</h2></center>
+            <p>Particulars: Marasigan Withdrawals</p>
+            <p>PR: 320</p>
+            <p>Debit: 200,000</p>
+        </div>
+    </div>
+    
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 30</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Credit: 200,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 30</h2></center>
+            <p>Particulars: Association  Dues Expense</p>
+            <p>PR: 550</p>
+            <p>Debit: 15,000</p>
+        </div>
+    </div>
+
+
+    <div class="balancesheet">
+        <div>
+            <center><h2>October 30</h2></center>
+            <p>Particulars: Cash</p>
+            <p>PR: 110</p>
+            <p>Credit: 15,000</p>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
