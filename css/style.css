@@ -30,6 +30,9 @@ html
     --white: #ffffff;
     --black: #000;
     --second-bg-color: #f1efef;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
 
@@ -233,6 +236,7 @@ section{
     color:var(--black);
     background: #fff;
     border: .5px solid #000;
+    font-weight: 500;
 }
 
 .Journal
@@ -364,6 +368,61 @@ section{
 {
     color: red;
 }
+
+.trial-balance
+{
+    margin-top: 5rem;
+}
+.padding 
+{
+    padding: 2rem 9%;
+}
+.trial-balance .group-slider .box{
+    /* background: var(--main-color); */
+    border: 2px solid var(--main-color);
+    padding:2rem;
+    text-align: center;
+    border-radius: .5rem;
+}
+.trial-balance .group-slider h5 
+{
+    font-family: 500;
+}
+
+.trial-balance .group-slider .box h3{
+    color:var(--black);
+    font-size: 2.2rem;
+    padding:.5rem 0;
+}
+.trial-balance .group-slider .box p 
+{
+    line-height: 1.8;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.Total-Balance
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.Total-Balance h2:nth-child(odd)
+{
+    color: blue;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.Total-Balance h2:nth-child(even)
+{
+    color: red;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
 
 
 

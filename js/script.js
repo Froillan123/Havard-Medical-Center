@@ -54,13 +54,36 @@ function toggleDetails() {
     }
 }
 
-
 ScrollReveal({ 
     // reset: true,
-    distance: '50px',
-    duration: 900,
+    distance: '20px',
+    duration: 1000,
     delay: 200
 });
 
 ScrollReveal().reveal('.right',  { origin: 'right' });
 ScrollReveal().reveal('.left',  { origin: 'left' });
+
+var swiper = new Swiper(".group-slider", {
+    spaceBetween: 15,
+    grabCursor:true,
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 9500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+
