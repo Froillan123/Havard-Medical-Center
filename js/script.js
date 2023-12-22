@@ -56,8 +56,9 @@ function toggleDetails() {
 
 
 ScrollReveal({ 
+    // reset: true,
     distance: '50px',
-    duration: 1600,
+    duration: 900,
     delay: 200
 });
 
