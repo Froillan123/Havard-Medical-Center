@@ -54,3 +54,12 @@ function toggleDetails() {
     }
 }
 
+
+ScrollReveal({ 
+    distance: '50px',
+    duration: 1600,
+    delay: 200
+});
+
+ScrollReveal().reveal('.right',  { origin: 'right' });
+ScrollReveal().reveal('.left',  { origin: 'left' });
