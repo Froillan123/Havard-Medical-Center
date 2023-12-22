@@ -134,7 +134,8 @@ html::-webkit-scrollbar-thumb{
     border-radius: .5rem;
     cursor: pointer;
 }
-.btn:hover {
+.btn:hover 
+{
     background-color: var(--text-color-dark);
   }
 
@@ -321,8 +322,48 @@ section{
 
 
 
+.paddingAccounts
+{
+    padding: 2rem 9%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.content-table
+{
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    /* border-radius: 1rem; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    height: auto;
+}
+.content-table caption
+{
+    background: #009879;
+    color: #fff;
+    text-align: center;
+    font-weight: 600; 
+    padding: 1.1rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
 
 
+.content-table td
+{
+    text-align: center;
+    padding: .7rem;
+}
+
+.content-table td:nth-child(odd)
+{
+    color: blue;
+}
+.content-table td:nth-child(even) 
+{
+    color: red;
+}
 
 
 
@@ -496,6 +537,10 @@ section{
         width: 50rem;
         height: 45rem;
     }
+    .paddingAccounts
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
    }
    
    @media(max-width: 530px)
@@ -510,7 +555,18 @@ section{
    @media(max-width: 426px)
    {
     
+    /* .home .image img
+    {
+        width: 50vw;
+        height: 45rem;
+        display: block;
+    } */
 
+    .home .content p
+    {
+        padding-right: 0rem;
+        line-height: 1.6;
+    }
     html 
     {
         font-size: 42.5%;
