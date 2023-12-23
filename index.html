@@ -28,7 +28,7 @@
             <ul class="dropdown">
                 <li><a href="#worksheet">Worksheet</a></li>
                 <li><a href="#income">Income Statement</a></li>
-                <li><a href="#owner">Statement Of Changes In Owner's Equity</a></li>
+                <li><a href="#owner">Changes In Owner's Equity</a></li>
                 <li><a href="#balancesheet">Balance Sheet</a></li>
             </ul>
         
@@ -2715,7 +2715,7 @@
     
 
 
-    <div class="owner" id="#owner">
+    <div class="owner" id="owner">
         <h2 class="heading"><span>Changes In Owners Equity</span></h2>
         <div class="padding-owner">
         <div class="owners-equity">
@@ -2748,6 +2748,112 @@
 
     <canvas id="ownerEquityChart" height="200px"></canvas>
 
+
+
+
+    <div class="balance" id="balancesheet">
+        <h2 class="heading"><span>Balance Sheet</span></h2>
+
+        <div class="padding-balance">
+            <table class="balance-sheet-table">
+                <thead>
+                    <tr>
+                        <th>ASSETS</th>
+                        <th>Amount</th>
+                        <th>LIABILITIES</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Current Assets -->
+                    <tr>
+                        <td>Cash</td>
+                        <td>114,000</td>
+                        <td>24% Notes Payable</td>
+                        <td>400,000</td>
+                    </tr>
+                    <tr>
+                        <td>Accounts Receivable</td>
+                        <td>204,000</td>
+                        <td>20% Notes Payable</td>
+                        <td>1,200,000</td>
+                    </tr>
+                    <tr>
+                        <td>Medical Supplies</td>
+                        <td>21,000</td>
+                        <td>Accounts Payable</td>
+                        <td>49,000</td>
+                    </tr>
+                    <tr>
+                        <td>Prepaid Insurance</td>
+                        <td>18,333.33</td>
+                        <td>Salaries Payable</td>
+                        <td>51,000</td>
+                    </tr>
+        
+                    <!-- Total Current Assets and Liabilities -->
+                    <tr class="total-row">
+                        <td>Total Current Assets</td>
+                        <td>357,333.33</td>
+                        <td>Total Liability</td>
+                        <td>1,788,000</td>
+                    </tr>
+        
+                    <!-- Non-Current Assets and Liabilities -->
+                    <tr>
+                        <td>Land</td>
+                        <td>250,000</td>
+                        <td>Owner's Equity</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Medical Building</td>
+                        <td>1,000,000</td>
+                        <td>Marasigan, Capital, Ending</td>
+                        <td>270,333</td>
+                    </tr>
+                    <tr>
+                        <td>Less: Accumulated Depreciation - Medical building</td>
+                        <td>(5,000)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Medical Equipment</td>
+                        <td>465,000</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Less: Accumulated Depreciation - Medical equipment</td>
+                        <td>(9,000)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+        
+                    <!-- Total Non-Current Assets and Liabilities -->
+                    <tr class="total-row">
+                        <td>Total Non-Current Assets</td>
+                        <td>1,701,000</td>
+                        <td>Total Owner's Equity</td>
+                        <td>270,333</td>
+                    </tr>
+        
+                    <!-- Total Assets, Liabilities, and Owner's Equity -->
+                    <tr class="total-row">
+                        <td>Total Assets</td>
+                        <td>2,058,333.33</td>
+                        <td>Total Liability and Owner's Equity</td>
+                        <td>2,058,333.33</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <canvas id="balanceSheetChart" height="200px"></canvas>
+
+    
 
    
 

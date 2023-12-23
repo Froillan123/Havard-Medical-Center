@@ -618,14 +618,42 @@ canvas {
     background-color: #fff;
 }
 
+.balance
+{
+    text-align: center;
+    margin-top: 10rem;
+}
 
 
-
-
-.balancesheet
+.padding-balance
 {
     padding: 2rem 9%;
 }
+.balance-sheet-table 
+{
+    width: 100%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+}
+
+.balance-sheet-table th, .balance-sheet-table td 
+{
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.balance-sheet-table th {
+    background-color: #28bf96;
+    color: #fff;
+    font-weight: bold;
+}
+
+.balance-sheet-table .total-row {
+    font-weight: bold;
+}
+
 
 
 
@@ -816,6 +844,10 @@ canvas {
     .paddingAccounts
     {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .worksheet th, .worksheet td {
+        font-size: 1rem; /* Adjust font size for smaller screens */
     }
    }
    
