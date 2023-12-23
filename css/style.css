@@ -131,12 +131,6 @@ html::-webkit-scrollbar-thumb{
     display: block;
     text-align: left;
 }
-
-.dropdown a:hover {
-    background-color: #ddd;
-}
-
-
 .logo
 {
     font-size: 2.5rem;
@@ -367,7 +361,6 @@ section{
 {
     margin-top: 5rem;
     font-size: 1.6rem;
-    /* border-radius: 1rem; */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     height: auto;
 }
@@ -407,7 +400,6 @@ section{
     padding: 2rem 9%;
 }
 .trial-balance .group-slider .box{
-    /* background: var(--main-color); */
     border: 2px solid var(--main-color);
     padding:2rem;
     text-align: center;
@@ -437,6 +429,7 @@ section{
     justify-content: center;
     gap: 5rem;
     margin-top: 5rem;
+    margin-bottom: 10rem;
 }
 
 .Total-Balance h2:nth-child(odd)
@@ -452,6 +445,45 @@ section{
     font-weight: 400;
 }
 
+.padding-adjust
+{
+    padding: 2rem 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.content-box
+{
+    box-shadow: 0 0 .5rem 5px #000,
+                0 0 .5rem 10px #009879
+
+    ; 
+    border-radius: .6rem;
+    background: var(--second-bg-color);
+    padding: 2rem;
+}
+
+.debit-box
+{
+    line-height: 1.7;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.content-box h5 
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+.credit-box
+{
+    line-height: 2;
+    font-size: 1.8rem;
+    margin-top: rem;
+    font-weight: 400
+}
 
 
 
