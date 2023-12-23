@@ -262,7 +262,7 @@ section{
     font-weight: 500;
 }
 
-.contain 
+/* .contain 
 {
     background: url(../images/bg.jpg) no-repeat center fixed;
     background-size: cover;
@@ -271,8 +271,7 @@ section{
     margin-bottom: 5rem;
     margin-top: 5rem;
     backdrop-filter: blur(1vw);
-
-}
+} */
 
 
 .Journal
@@ -283,7 +282,7 @@ section{
 
 .cal 
 {
-    color: var(--white);
+    color: var(--black);
     margin-right: 1rem;
     font-size: 3.4rem;
     display: inline-block;
@@ -301,21 +300,20 @@ section{
 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--white);
+    color: var(--black);
 }
 
 .balancesheet div
 {
-    box-shadow: 0 0 .5rem 5px var(--white),
-                0 0 .5rem 6px var(--second-bg-color)
-    ; 
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
     border-radius: 1rem;
     padding: 1.5rem;
+    background: #fff;
 }
 
 .balancesheet p 
 {
-    color: var(--white);
+    color: var(--black);
     font-size: 1.8rem;
     line-height: 1.8;
     padding: 1.1rem;
@@ -323,13 +321,13 @@ section{
 
 .balancesheet:nth-child(odd)
 {
-    border-left: 4px solid var(--white);
+    border-left: 4px solid var(--second-main-color);
     padding-left: 5rem;
     transform: translate(17rem);
 }
 .balancesheet:nth-child(even)
 {
-    border-right: 4px solid var(--white);
+    border-right: 4px solid var(--second-main-color);
     padding-right: 5rem;
     transform: translate(-16.62rem);
     
@@ -339,7 +337,7 @@ section{
 .balancesheet:nth-child(even)::before
 {
     content: '';
-    background: var(--white);
+    background: var(--second-main-color);
     width: 4rem;
     height: 4px;
     position: absolute;
@@ -355,16 +353,15 @@ section{
 .balancesheet:nth-child(even) div::before
 {
     content: '';
-    background: var(--white);
-    box-shadow: 0 0 0.5rem #626262;
+    background: var(--second-main-color);
     width: 1.5rem;
     height: 1.5rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
-    box-shadow: 0 0 .5rem 2px var(--white),
-                0 0 .5rem 4px var(--second-bg-color)
+    box-shadow: 0 0 .5rem 2px var(--second-main-color),
+                0 0 .5rem 4px var(--main-color)
     ; 
 }
 
@@ -875,7 +872,7 @@ canvas {
     }
 
     .worksheet th, .worksheet td {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem; 
         display: block;
         width: 100%;
     }
