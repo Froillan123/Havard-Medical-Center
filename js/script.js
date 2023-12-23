@@ -104,3 +104,67 @@ var swiper = new Swiper(".group-slider", {
   });
 
 
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Data for the bar graph
+    const labels = ['Total Revenues', 'Total Expenses', 'Profit'];
+    const totalRevenuesData = [434000 + 30000, 0, 0]; // Combine "Medical Revenues" and "Research Revenues"
+    const expensesData = [0, 124000 + 1667 + 23000 + 35000 + 15000 + 3000 + 5000 + 9000 + 28000, 0]; // Sum of expenses
+    const profitData = [0, 0, 434000 + 30000 - (124000 + 1667 + 23000 + 35000 + 15000 + 3000 + 5000 + 9000 + 28000)];
+
+    // Get the canvas element
+    const ctx = document.getElementById('incomeStatementChart').getContext('2d');
+
+    // Create the bar graph
+    const chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Revenues',
+                    backgroundColor: 'rgba(0, 128, 0, 0.5)', // Green color
+                    borderColor: 'rgba(0, 128, 0, 1)',
+                    borderWidth: 1,
+                    data: totalRevenuesData,
+                },
+                {
+                    label: 'Expenses',
+                    backgroundColor: 'rgba(255, 165, 0, 0.5)', // Orange color
+                    borderColor: 'rgba(255, 165, 0, 1)',
+                    borderWidth: 1,
+                    data: expensesData,
+                },
+                {
+                    label: 'Profit',
+                    backgroundColor: 'rgba(0, 0, 255, 0.5)', // Blue color
+                    borderColor: 'rgba(0, 0, 255, 1)',
+                    borderWidth: 1,
+                    data: profitData,
+                },
+            ],
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                },
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Income Statement Chart',
+                    font: {
+                        size: 20,
+                    },
+                },
+            },
+        },
+    });
+});
