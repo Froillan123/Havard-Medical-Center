@@ -506,7 +506,7 @@ section{
     border-collapse: collapse;
     margin-top: 5rem;
     margin-bottom: 10rem;
-
+    height: auto;
 }
 
 .worksheet  th, td 
@@ -574,7 +574,6 @@ section{
 }
 
 canvas {
-    width: 100%;
     padding: 2rem 10%;
     cursor: pointer;
 }
