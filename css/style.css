@@ -107,6 +107,35 @@ html::-webkit-scrollbar-thumb{
     width: 100%;
 }
 
+.dropdown 
+{
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 83%;
+    background-color: var(--main-color);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar a:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}
+
+.dropdown a 
+{
+    color: var(--white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
 
 .logo
 {
@@ -539,6 +568,11 @@ section{
     .heading span
     {
         border: none;
+    }
+    .dropdown 
+    {
+        left: 0;
+        width: 100%;
     }
 }
 

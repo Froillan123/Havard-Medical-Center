@@ -34,7 +34,24 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     };
+
+    // Dropdown functionality for "Extra Links ↓"
+    let extraLinksDropdownLink = document.querySelector('.navbar a[href="#"]');
+    let extraLinksDropdown = document.querySelector('.dropdown');
+
+    extraLinksDropdownLink.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent the default link behavior
+        extraLinksDropdown.style.display = (extraLinksDropdown.style.display === 'block') ? 'none' : 'block';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (!event.target.matches('.navbar a[href="#"]')) {
+            extraLinksDropdown.style.display = 'none';
+        }
+    });
 });
+
+
 
 
 
