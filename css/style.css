@@ -262,12 +262,33 @@ section{
     font-weight: 500;
 }
 
+.contain 
+{
+    background: url(../images/bg.jpg) no-repeat center fixed;
+    background-size: cover;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    backdrop-filter: blur(1vw);
+
+}
+
+
 .Journal
 {
     margin: 5rem auto;
     max-width: 34.15rem;
 }
 
+.cal 
+{
+    color: var(--white);
+    margin-right: 1rem;
+    font-size: 3.4rem;
+    display: inline-block;
+    padding-top: 2rem;
+}
 .balancesheet
 {
     max-width: 34rem;
@@ -280,74 +301,81 @@ section{
 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: var(--white);
 }
 
 .balancesheet div
 {
-    box-shadow: 0 0 .5rem 5px #000; 
+    box-shadow: 0 0 .5rem 5px var(--white),
+                0 0 .5rem 6px var(--second-bg-color)
+    ; 
     border-radius: 1rem;
     padding: 1.5rem;
 }
 
 .balancesheet p 
 {
-    color: var(--black);
+    color: var(--white);
     font-size: 1.8rem;
     line-height: 1.8;
+    padding: 1.1rem;
 }
 
 .balancesheet:nth-child(odd)
 {
-    border-left: 3px solid var(--main-color);
-    padding-left: 3rem;
+    border-left: 4px solid var(--white);
+    padding-left: 5rem;
     transform: translate(17rem);
 }
 .balancesheet:nth-child(even)
 {
-    border-right: 3px solid var(--main-color);
-    padding-right: 3rem;
-    transform: translate(-16.75rem);
+    border-right: 4px solid var(--white);
+    padding-right: 5rem;
+    transform: translate(-16.62rem);
+    
 }
 
 .balancesheet:nth-child(odd)::before,
 .balancesheet:nth-child(even)::before
 {
     content: '';
-    background: var(--main-color);
-    width: 3rem;
-    height: 3px;
+    background: var(--white);
+    width: 4rem;
+    height: 4px;
     position: absolute;
     top: 50%;
-    transform: translate(-100%);
+    transform: translate(-110%);
+    
 }
 .balancesheet:nth-child(even)::before
 {
-    right: -9%;
+    right: -12%;
 }
 .balancesheet:nth-child(odd) div::before,
 .balancesheet:nth-child(even) div::before
 {
     content: '';
-    background: var(--main-color);
-    box-shadow: 0 0 0.5rem #000;
-    width: 0.8rem;
-    height: 0.8rem;
+    background: var(--white);
+    box-shadow: 0 0 0.5rem #626262;
+    width: 1.5rem;
+    height: 1.5rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
+    box-shadow: 0 0 .5rem 2px var(--white),
+                0 0 .5rem 4px var(--second-bg-color)
+    ; 
 }
 
 .balancesheet:nth-child(odd) div::before
 {
-    left: -0.5rem;
+    left: -0.8rem;
 }
 .balancesheet:nth-child(even) div::before
 {
-    right: -0.5rem;
+    right: -0.8rem;
 }
-
-
 
 .paddingAccounts
 {
@@ -848,8 +876,20 @@ canvas {
 
     .worksheet th, .worksheet td {
         font-size: 1rem; /* Adjust font size for smaller screens */
+        display: block;
+        width: 100%;
     }
-   }
+
+    .worksheet th
+   
+    {
+        display: none;
+    }
+    .worksheet tr 
+    {
+        margin-bottom: 15px;
+    }
+}
    
    @media(max-width: 530px)
    {
