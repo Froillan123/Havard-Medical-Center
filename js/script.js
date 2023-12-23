@@ -168,3 +168,34 @@ var swiper = new Swiper(".group-slider", {
         },
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('ownerEquityChart').getContext('2d');
+    const data = {
+        labels: ['Starting', 'ADD: Profit', 'Balance', 'Less: Withdrawal', 'Ending'],
+        datasets: [{
+            label: 'Marasigan, Capital',
+            borderColor: 'rgba(40, 191, 150, 1)', // New color
+            backgroundColor: 'rgba(40, 191, 150, 0.2)', // New light color
+            borderWidth: 2,
+            fill: true, // Fill the area under the line
+            data: [250000, 220333.33, 470333.33, -200000, 270333.33],
+        }]
+    };
+
+    const options = {
+        scales: {
+            y: {
+                beginAtZero: true,
+            },
+        },
+    };
+
+    new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options,
+    });
+});

@@ -578,6 +578,48 @@ canvas {
     cursor: pointer;
 }
 
+.owner 
+{
+    /* background-color: #fff; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+    margin-top: 10rem;
+}
+
+.padding-owner 
+{
+    padding: 2rem 9%;
+}
+
+.owners-equity {
+    overflow-x: auto;
+}
+
+.owners {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.owners th, .owners td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.owners th {
+    background-color: var(--main-color);
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.owners td {
+    background-color: #fff;
+}
+
+
+
 
 
 .balancesheet
