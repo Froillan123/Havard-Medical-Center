@@ -78,8 +78,8 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.right',  { origin: 'right' });
-ScrollReveal().reveal('.left',  { origin: 'left' });
+ScrollReveal().reveal('.right,',  { origin: 'right' });
+ScrollReveal().reveal('.left, .content,', { origin: 'left' });
 
 var swiper = new Swiper(".group-slider", {
     spaceBetween: 15,

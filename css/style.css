@@ -478,7 +478,7 @@ section{
 
 .content-box
 {
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.8);
     border-radius: .6rem;
     background: var(--second-bg-color);
     padding: 2rem;
