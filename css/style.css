@@ -308,6 +308,7 @@ section{
 {
     margin: 5rem auto;
     max-width: 34.15rem;
+    position: relative;
 }
 
 .cal 
@@ -339,11 +340,7 @@ section{
     border-radius: 1rem;
     padding: 1.5rem;
     background: #fff;
-    transition: border-radius 400ms ease-in-out;
-}
-.balancesheet div:hover
-{
-    border-radius: 55% 45% 86% 14% / 54% 59% 41% 46% ;
+
 }
 
 .balancesheet p 
@@ -798,6 +795,20 @@ canvas {
     color:var(--second-main-color);
 }
 
+
+
+.contain {
+    background: rgba(255, 255, 255, 0.1) url(../images/circle-scatter-haikei.svg) no-repeat center fixed;
+    background-size: cover;
+    z-index: -1000;
+    position: relative; /* Add this to create a stacking context */
+}
+
+/* Add the following rule to make the content fully opaque */
+.contain > .Journal {
+    position: relative;
+    z-index: 5;
+}
 
 @media (max-width: 1209px) {
     .blob .blobby .blob-background {
