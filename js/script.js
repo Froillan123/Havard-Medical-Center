@@ -79,7 +79,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.right,',  { origin: 'right' });
-ScrollReveal().reveal('.left, .content,', { origin: 'left' });
+ScrollReveal().reveal('.left, .content', { origin: 'left' });
 
 var swiper = new Swiper(".group-slider", {
     spaceBetween: 15,
