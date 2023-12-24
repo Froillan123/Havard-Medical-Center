@@ -521,7 +521,9 @@ section{
 
 .padding-worksheet 
 {
-   
+    /* padding: 2rem 9%; */
+    width: min(900px, 100% -3rem);
+    margin-inline: auto;
     padding: 2rem 9%;
 }
 
@@ -616,11 +618,10 @@ canvas {
     padding: 2rem 9%;
 }
 
-.owners-equity {
-    overflow-x: auto;
-}
 
-.owners {
+
+.owners 
+{
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
@@ -639,7 +640,8 @@ canvas {
     color: var(--white);
 }
 
-.owners td {
+.owners td 
+{
     background-color: #fff;
 }
 
@@ -758,7 +760,50 @@ canvas {
 
 
 
+@media(max-width: 1114px)
+{
+    .worksheet th 
+    {
+        display: none;
+    }
+    .worksheet td 
+    {
+        display: block;
+        border-radius: .9rem;
+    }
+    .padding-worksheet .worksheet td:nth-child(odd)
+    {
+        background: hsla(162, 100%, 50%, 0.2);
+    }
+    .padding-worksheet .worksheet td:nth-child(even)
+    {
+        background: hsla(138, 99%, 49%, 0.1);
+    }
 
+    .padding .worksheet .total tr .none {
+        display: none;
+    }
+    
+
+    .worksheet td::before
+    {
+        content: attr(data-cell) ": ";
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: var(--black);
+    }
+
+    .worksheet td:nth-child(odd)
+    {
+        padding-top:  2rem;
+        padding-bottom: 2rem;
+    }
+    .worksheet td:nth-child(even)
+    {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
 
 
 @media screen and (max-width: 1150px)
@@ -858,9 +903,27 @@ canvas {
    {
     width: 0;
    }
-   
+   @media(max-width: 1252px)
+   {
+    .padding-worksheet
+    {
+        padding: 0rem;
+    }
+   }
    @media (max-width: 768px) 
    {
+    .header
+    {
+        padding: 1rem;
+    }
+    .logo
+    {
+        font-size: 2rem;
+    }
+    #menu-icon
+    {
+        font-size: 3rem;
+    }
     .home .image img
     {
         width: 50rem;
@@ -870,21 +933,56 @@ canvas {
     {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .worksheet th, .worksheet td {
-        font-size: 1rem; 
-        display: block;
-        width: 100%;
+    .padding-worksheet
+    {
+        padding: 0;
     }
 
-    .worksheet th
-   
+    .income-statement
+    {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: -10rem;
+        padding: 1rem 7%;
+    }
+    .heading span
+    {
+        font-size: 2rem;
+    }
+    .padding-owner
+    {
+        padding: 0 0%;
+        margin-right: 20px;
+    }
+    .owners td
+    {
+        display: block;
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+    .owners th 
     {
         display: none;
     }
-    .worksheet tr 
+
+    .owner td:nth-child(odd)
     {
-        margin-bottom: 15px;
+        padding-top:  2rem;
+        padding-bottom: 2rem;
+    }
+    .owner td:nth-child(even)
+    {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .owner td::before
+    {
+        content: attr(data-cell);
+        font-weight: 700;
+    }
+
+    .padding-balance
+    {
+        padding: 1rem;
     }
 }
    
