@@ -769,11 +769,7 @@ canvas {
     {
         background: hsla(138, 99%, 49%, 0.1);
     }
-
-    .padding .worksheet .total tr .none {
-        display: none;
-    }
-    
+ 
 
     .worksheet td::before
     {
@@ -977,7 +973,7 @@ canvas {
 
     .padding-balance
     {
-        padding: 1rem;
+        padding: 0;
     }
 }
    
