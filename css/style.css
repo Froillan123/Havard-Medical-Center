@@ -19,8 +19,6 @@ html
 {
     font-size: 62.5%;
 }
-
-
 :root
 {
     --main-color: #28bf96;
@@ -164,6 +162,8 @@ html::-webkit-scrollbar-thumb{
 {
     background-color: var(--text-color-dark);
   }
+ 
+  
 
 section{
     padding: 2rem 9%;
@@ -177,6 +177,8 @@ section{
     height: 100vh;
     margin-bottom: 10rem;
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 .home .content
 {
@@ -187,12 +189,23 @@ section{
 {
     flex: 1 1 45rem;
 }
-.home .image img
-{
+.home .image img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 68% 32% 73% 27% / 51% 61% 39% 49%;
     margin-top: 2rem;
     cursor: pointer;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    animation: blobAnimation 3s infinite alternate;
+}
+
+@keyframes blobAnimation {
+    0% {
+        border-radius: 74% 26% 40% 60% / 63% 45% 55% 37% ;
+    }
+    100% {
+        border-radius: 98% 32% 83% 30% / 51% 61% 39% 59%;
+    }
 }
 .home .content h1
 {
@@ -261,7 +274,35 @@ section{
     border: .5px solid #000;
     font-weight: 500;
 }
+.blob-background {
+    position: absolute;
+    top: -110%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -500;
+}
+.blob 
+{
+    position: absolute;
+    top: -10%;
+    left: -75%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -500;
+}
 
+.blobby
+{
+    position: absolute;
+    top: -103%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
 
 .Journal
 {
@@ -298,6 +339,11 @@ section{
     border-radius: 1rem;
     padding: 1.5rem;
     background: #fff;
+    transition: border-radius 400ms ease-in-out;
+}
+.balancesheet div:hover
+{
+    border-radius: 55% 45% 86% 14% / 54% 59% 41% 46% ;
 }
 
 .balancesheet p 
@@ -389,6 +435,9 @@ section{
     font-size: 2rem;
     
 }
+
+
+
 
 
 .content-table td
@@ -485,6 +534,7 @@ section{
     background: #fff;
 }
 
+
 .debit-box
 {
     line-height: 1.7;
@@ -525,6 +575,7 @@ section{
     margin-bottom: 10rem;
     height: auto;
 }
+
 
 .worksheet  th, td 
 {
@@ -748,7 +799,11 @@ canvas {
 }
 
 
-
+@media (max-width: 1209px) {
+    .blob .blobby .blob-background {
+        display: none;
+    }
+}
 
 @media(max-width: 1114px)
 {
@@ -846,6 +901,7 @@ canvas {
     {
         display: none;
     }
+
 }
 
 @media(max-width: 1281px)
@@ -855,7 +911,7 @@ canvas {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-@media(max-width: 1182px)
+@media(max-width: 1252px)
 {
     .header
    {
