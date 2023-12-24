@@ -928,6 +928,10 @@ canvas {
     {
         padding: 0;
     }
+    .padding-adjust
+    {
+        padding: 1rem 5%;
+    }
 
     .income-statement
     {
