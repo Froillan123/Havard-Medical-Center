@@ -78,7 +78,7 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.right,',  { origin: 'right' });
+ScrollReveal().reveal('.right',  { origin: 'right' });
 ScrollReveal().reveal('.left, .content', { origin: 'left' });
 
 var swiper = new Swiper(".group-slider", {
