@@ -262,17 +262,6 @@ section{
     font-weight: 500;
 }
 
-/* .contain 
-{
-    background: url(../images/bg.jpg) no-repeat center fixed;
-    background-size: cover;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-    backdrop-filter: blur(1vw);
-} */
-
 
 .Journal
 {
@@ -842,10 +831,15 @@ canvas {
     {
         border: none;
     }
-    .dropdown 
+    .dropdown
     {
         left: 0;
         width: 100%;
+        border-top: 1px solid #000;
+    }
+    .dropdown a 
+    {
+        padding: .10rem 1%;
     }
 }
 
