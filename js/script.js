@@ -144,6 +144,7 @@ var swiper = new Swiper(".group-slider", {
                     borderWidth: 1,
                     data: profitData,
                 },
+                
             ],
         },
         options: {
@@ -161,7 +162,7 @@ var swiper = new Swiper(".group-slider", {
                     display: true,
                     text: 'Income Statement Chart',
                     font: {
-                        size: 20,
+                        size: 25,
                     },
                 },
             },
@@ -205,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     // Data for the horizontal bar chart
     const labels = ['Total Assets', 'Non-Current Assets', 'Total Owner\'s Equity', 'Total Liability and Owner\'s Equity'];
-    const data = [2058333.33, 1701000, 270333, 1788000];
+    const data = [2058333.33, 1701000, 270333, 2058333.33];
     const colors = ['#F2AFEF', '#C499F3', '#7360DF', '#33186B']; // Red, Blue, Purple, YellowGreen
 
     // Get the canvas element

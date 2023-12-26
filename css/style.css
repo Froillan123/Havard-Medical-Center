@@ -535,21 +535,6 @@ section{
     margin-top: 5rem;
 }
 
-.padding-adjust .icon 
-{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    color: #fff;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 50%;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
 
 .content-box
 {
@@ -1000,11 +985,11 @@ canvas {
    {
     .header
     {
-        padding: 1rem;
+        padding: 2rem;
     }
     .logo
     {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     #menu-icon
     {
@@ -1085,7 +1070,7 @@ canvas {
     }
    }
 
-   @media(max-width:524px)
+   @media(max-width: 524px)
    {
     
     /* .home .image img
