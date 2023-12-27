@@ -207,12 +207,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Data for the horizontal bar chart
     const labels = ['Total Assets', 'Non-Current Assets', 'Total Owner\'s Equity', 'Total Liability and Owner\'s Equity'];
     const data = [2058333.33, 1701000, 270333, 2058333.33];
-    const colors = ['#F2AFEF', '#C499F3', '#7360DF', '#33186B']; // Red, Blue, Purple, YellowGreen
+    const colors = ['#F2AFEF', '#C499F3', '#7360DF', '#33186B']; 
 
     // Get the canvas element
     const ctx = document.getElementById('balanceSheetChart').getContext('2d');
 
-    // Create the horizontal bar chart
     const chart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -234,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     display: false
                 }
             },
-            cornerRadius: 0.5 // Set the border radius
+            cornerRadius: 0.5 
         }
     });
 });
